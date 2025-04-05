@@ -191,7 +191,7 @@ Obs: A lista 1 tem umas questões extras. Devo tentar depois de resolver as outr
 # Questão 1
 Responda os itens a seguir:
 
-(### (a) Seja \( A = p \to (q \to r) \) e \( v(A) = F \).
+### (a) Seja \( A = p \to (q \to r) \) e \( v(A) = F \).
 
 - **Resposta:**
 
