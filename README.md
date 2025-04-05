@@ -191,7 +191,7 @@ Obs: A lista 1 tem umas questões extras. Devo tentar depois de resolver as outr
 # Questão 1
 # Responda os itens a seguir:
 
-## (a) Seja $A = p \to (q \to r)$ e $v(A) = F$
+## (a) Seja A = p → (q → r) uma fórmula e v uma valoração tal que v(A) = F. Quais os valores possíveis para v(p), v(q) e v(r)?
 
 **Resposta:**
 
@@ -212,7 +212,7 @@ Obs: A lista 1 tem umas questões extras. Devo tentar depois de resolver as outr
 **Conclusão:**  
 $v(p)=T,\quad v(q)=T,\quad v(r)=F$
 
-## (b) Seja $A = (p \lor r) \to (q \lor r)$ e $v(A) = F$
+## (b) Seja A = (p ∨ r) → (q ∨ r) uma fórmula e v uma interpretação tal que v(A) = F. Quais os valores possíveis para v(p), v(q) e v(r)?
 
 **Resposta:**
 
@@ -235,7 +235,7 @@ $v(p)=T,\quad v(q)=T,\quad v(r)=F$
 **Conclusão:**  
 $v(p)=T,\quad v(q)=F,\quad v(r)=F$
 
-## (c) Seja $A = p \to (q \to r)$ com $v(A) = T$ e $v(p)=T$
+## (c) Seja A = p → (q → r) uma fórmula e v uma valoração tal que v(A) = T e v(p) = T. Quais os valores possíveis para v(q) e v(r)?
 
 **Resposta:**
 
@@ -252,7 +252,7 @@ $v(p)=T,\quad v(q)=F,\quad v(r)=F$
 - Ou $v(q)=F$ (com $v(r)$ livre, ou seja, pode ser $T$ ou $F$);
 - Ou $v(q)=T$ e, consequentemente, $v(r)=T$.
 
-## (d) Seja uma interpretação tal que $v(p \to q)=T$. O que podemos dizer sobre $v((p \lor r) \to (q \lor r))$?
+## (d) Seja v uma interpretação tal que v(p → q) = T. O que podemos dizer a respeito do resultado de v((p ∨ r) → (q ∨ r))?
 
 **Resposta:**
 
@@ -270,7 +270,7 @@ $v(p)=T,\quad v(q)=F,\quad v(r)=F$
 **Conclusão:**  
 $v((p \lor r) \to (q \lor r)) = T$ (independentemente do valor de $v(r)$)
 
-## (e) Seja uma interpretação tal que $v(p \to q)=F$. O que podemos dizer a respeito de $v((p \land r) \to (q \land r))$ e de $v(r)$?
+## (e) Seja v uma interpretação tal que v(p → q) = F. O que podemos dizer a respeito do resultado de v((p ∧ r) → (q ∧ r)) e de v(r)?
 
 **Resposta:**
 
@@ -297,7 +297,7 @@ $v((p \lor r) \to (q \lor r)) = T$ (independentemente do valor de $v(r)$)
 - Se $v(r)=F$, então $v((p \land r) \to (q \land r)) = T$.  
 O valor de $v(r)$ pode ser $T$ ou $F$, mas o valor da implicação depende dele.
 
-## (f) Seja $A = (p \lor r) \to (q \lor r)$ com $v(A)=F$ e $v(p \to q)=T$
+## (f) Seja A = (p ∨ r) → (q ∨ r) uma fórmula e v uma interpretação tal que v(A) = F e v(p → q) = T. Quais os valores possíveis para v(q) e v(r)? O que podemos dizer sobre a valoração v?
 
 **Resposta:**
 
@@ -325,13 +325,7 @@ O valor de $v(r)$ pode ser $T$ ou $F$, mas o valor da implicação depende dele.
 Existe uma contradição: para $v(A)=F$ precisamos de $v(q)=F$ e para $v(p \to q)=T$ (com $v(p)=T$) precisaríamos de $v(q)=T$.  
 Portanto, **não existe** uma interpretação $v$ que satisfaça simultaneamente $v(A)=F$ e $v(p \to q)=T$.
 
-## (g) Seja $A = p \to (q \land \lnot q)$ e considerem as valorações $v_1$ e $v_2$ tais que:
-- $v_1(A)=T$
-- $v_2(p \lor (p \land q))=T$
-
-Queremos determinar os valores de:
-- $v_1(A \land (p \lor (p \land q)))$
-- $v_2(A \land (p \lor (p \land q)))$
+## (g) Seja A = p → (q ∧ ¬q) uma fórmula e v₁ e v₂ valorações tal que v₁(A) = T e v₂(p ∨ (p ∧ q)) = T. Quais os valores possíveis para v₁(A ∧ (p ∨ (p ∧ q))) e v₂(A ∧ (p ∨ (p ∧ q)))?
 
 **Resposta:**
 
