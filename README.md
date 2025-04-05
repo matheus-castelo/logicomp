@@ -120,3 +120,28 @@ Em seguida, você deve usar o repositório disponível em
 https://github.com/thiagoalvesifce/logicomp  
 e escrever um código para a função  
 `substitution(formula, old_subformula, new_subformula)`.
+- Resposta: 
+````python
+formula = And(Atom('p'), Not(Atom('q')))  # p AND NOT q
+old_formula = Atom('p')  # p
+new_formula = Or(Atom('r'), Atom('s'))  # r OR s
+
+def substitution(formula, old_formula, new_formula):
+    if formula == old_formula:
+        return new_formula
+    elif isinstance(formula, Atom):
+        return formula
+    elif isinstance(formula, Not):
+        return Not(substitution(formula.inner, old_formula, new_formula))
+    elif isinstance(formula, (And, Or, Implies)):
+        return type(formula)(substitution(formula.left, old_formula, new_formula), substitution(formula.right, old_formula, new_formula))
+    else:
+        return formula
+
+print("Formula:", str(formula))
+print("Old Formula:", str(old_formula))
+print("New Formula:", str(new_formula))
+print("After Substitution:", str(substitution(formula, old_formula, new_formula)))
+````
+----
+# Questão 7
