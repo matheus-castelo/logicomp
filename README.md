@@ -89,3 +89,34 @@ print("Questao 3 - Eh uma Formula Negativa? ", is_negation_formal_formula(formul
 ````
 ----
 ## Questão 5
+Conforme a definição de fórmula da lógica proposicional, os conectivos binários devem  
+ser escritos na forma infixa, ou seja, devem ser escritos entre duas fórmulas. Essa  
+definição poderia ser modificada possibilitando escrever os conectivos na notação  
+polonesa, conforme indicado pelas correspondências a seguir:  
+
+- A fórmula A atômica corresponde à fórmula A na notação polonesa,  
+- (¬A) corresponde a ¬A,  
+- (A ∧ B) corresponde a ∧AB,  
+- (A ∨ B) corresponde a ∨AB,  
+- (A → B) corresponde a →AB.  
+
+As fórmulas a seguir estão na notação polonesa. Reescreva-as na notação convencional:  
+
+(a) ∨ → p q → r → ∨ p q ¬ s  
+- Resposta: (p→q)∨(r→((p∨q)→(¬s)))
+
+
+(b) → → p q ∨ → p q → ¬ r r
+- Resposta: (p→q)→((p→q)∨((¬r)→r))
+----
+# Questão 6
+Defina um pseudocódigo recursivo que substitui toda ocorrência da subfórmula B  
+dentro da fórmula A pela fórmula C.  
+
+Observe que `substitution(((p ∧ ¬q) → r), (¬q), (r ∨ t))` deve retornar a fórmula  
+`((p ∧ (r ∨ t)) → r)`.  
+
+Em seguida, você deve usar o repositório disponível em  
+https://github.com/thiagoalvesifce/logicomp  
+e escrever um código para a função  
+`substitution(formula, old_subformula, new_subformula)`.
