@@ -1,3 +1,5 @@
+OBS: As imagens que estão no repositório podem ser ignoradas. Elas só servem para fazer referência ao Markdown. Costumo utilizar o Notion que já cuida dessa parte, mas para botar no Github ficaria mais fácil fazer direto pelo Markdown mesmo.
+----
 # LISTA 1 -  FÓRMULAS DA LÓGICA PROPOSICIONAL
 ----
 ## Questão 1
@@ -145,3 +147,44 @@ print("After Substitution:", str(substitution(formula, old_formula, new_formula)
 ````
 ----
 # Questão 7
+Além das convenções para omitir os parênteses das fórmulas, também temos outras formas para melhorar a legibilidade de fórmulas grandes. Por exemplo, a fórmula `p1 ∧ p2 ∧ p3 ∧ p4 ∧ p5 ∧ p6 ∧ p7 ∧ p8 ∧ p9` pode ser representada de maneira mais compacta como:
+
+![alt text](image-1.png)
+
+Como outro exemplo, a fórmula `(¬p1,1 ∧ ¬p1,2) ∨ (¬p2,1 ∧ ¬p2,2) ∨ (¬p3,1 ∧ ¬p3,2)` pode ser apresentada de maneira mais compacta como:
+
+![alt text](image-2.png)
+
+Dessa forma, essas notações são definidas de forma semelhante à notação de somatório. Nesta questão, a cada item a seguir você vai criar a fórmula completa via código a partir da fórmula compacta:
+
+![alt text](image-3.png)
+- Resposta: 
+
+
+![alt text](image-4.png)
+- Resposta:
+`p₁ ∧ p₂ ∧ p₃ ∧ ... ∧ p₂₀`  
+
+![alt text](image-5.png)
+- Resposta:
+`p₁ ∧ p₂ ∧ ... ∧ pₙ`  
+
+![alt text](image-6.png)
+- Resposta:
+ `(¬p₁,₁ ∧ ¬p₁,₂ ∧ ... ∧ ¬p₁,ₘ) ∨ (¬p₂,₁ ∧ ¬p₂,₂ ∧ ... ∧ ¬p₂,ₘ) ∨ ... ∨ (¬pₙ,₁ ∧ ... ∧ ¬pₙ,ₘ)`
+
+![alt text](image-7.png)
+- Resposta:
+`((a₁ → (a₂ ∨ b₂)) ∧ (b₁ → (a₂ ∨ b₂))) ∧ ((a₂ → (a₃ ∨ b₃)) ∧ (b₂ → (a₃ ∨ b₃))) ∧ ... ∧ ((aₙ → (aₙ₊₁ ∨ bₙ₊₁)) ∧ (bₙ → (aₙ₊₁ ∨ bₙ₊₁)))`  
+
+![alt text](image-8.png)
+- Resposta:
+`((p₁ ∨ q₁) ∧ (p₂ ∨ q₂) ∧ ... ∧ (pₙ ∨ qₙ)) → pₙ₊₁`  
+
+![alt text](image-9.png)
+- Resposta:
+`(p₁,₁ ∨ p₁,₂ ∨ ⋯ ∨ p₁,ₙ) ∧ (p₂,₁ ∨ p₂,₂ ∨ ⋯ ∨ p₂,ₙ) ∧ ... ∧ (pₙ₊₁,₁ ∨ pₙ₊₁,₂ ∨ ⋯ ∨ pₙ₊₁,ₙ)`
+----
+Obs: A lista 1 tem umas questões extras. Devo tentar depois de resolver as outras 2 listas, caso dê tempo, até a prova.
+----
+# Lista 2
